@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script>
+      $('eventModal').on('hidden.bs.modal', '.modal', function () {
+        $(this).removeData('bs.modal');
+      });
+    </script>
+    
+    <title>Sanatana Dharma Kendra</title>
+</head>
+    
+    
+<body>
+
+
+    <div class="container-fluid" style="background-color: #e09257">
+        <div class="row"><div class="col-3">
+            
+            
+            
+             <img src="images/site-logo-480x480.png" height="40%" width="30%" style="margin-top: 20px; margin-bottom: 5px">
+            </div>
+        <div class="col-9">
+         <div class="text-left">
+                    
+                    <h1 class="font-italic" style="color: white; font-family:serif; font-size: 4vw; display: inline-block; margin-top: 20px">SANATANA DHARMA KENDRA </h1> </div> 
+            </div>
+        
+        </div>
+    </div>
+                   
+
+               
+    <style>img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}</style>
+    
+    
+    
+    <!-- Desktop Version of Menubar -->
+    <div class="d-none d-md-block">
+        <nav class="navbar navbar-expand navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#priestInfo">Priests</button>
+                </li>
+
+                <li class="nav-item active">
+                    <button type="button" class="btn btn-light" data-toggle="modal" data-target="#eventModal">Event Booking</button>
+                </li>
+                <li class="nav-item active">
+                    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                        <input type="hidden" name="cmd" value="_s-xclick" />
+                        <input type="hidden" name="hosted_button_id" value="H7Y9XGSJEYZ5U" />
+                        <button type="submit" class="btn btn-light">Donate</button>
+                    </form>
+                </li>
+                    <li class="nav-item active">
+                    <a class="nav-link" href="mailto:joshikumarswami@yahoo.com">Contact</a>
+                </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tel:+14084819242">(408)481-9242</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://goo.gl/maps/JpdVVKgajdJdon897">
+                        <img src="images/location.png" width="20" height="20">
+                    </a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="mailto:joshikumarswami@yahoo.com">
+                        <img src="images/email.png" width="20" height="18">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.facebook.com/sanatana.dharmakendra">
+                        <img src="images/facebook.png" width="20" height="20">
+                    </a>
+                </li>
+            </ul>
+            </div>
+        </nav>
+    </div>
+    <!-- End of Desktop Version of Menubar -->
+
+    
+    <!-- Mobile Version of Menubar -->
+    <div class="d-sm-none">
+        <nav class="navbar navbar-expand navbar-light bg-light">
+              <div class="dropdown" >
+                <button class="btn" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="false" aria-expanded="false"><img src="http://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Hamburger_icon.svg/440px-Hamburger_icon.svg.png" width="20" /></button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Home</a>
+                        <a class="dropdown-item" href="#">About</a>
+                        <a class="dropdown-item" data-toggle="modal" data-target="#priestInfo2">Priests</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" onclick="window.location='https://docs.google.com/forms/d/e/1FAIpQLSeMY4kU_INbVeRrqR3uJhfYlk6oO2f-yMHL91xeZQTjvwY7Gw/viewform?embedded=false';">Event Booking</a>
+                        <a class="dropdown-item" href="https://www.paypal.com/donate/?token=lhLKfhbJ052iM0TsSOUy1DWt-h0MGoUWzHIBlBjSDeZa5tWocgwmmH6Mi348QiPMujo6Hm&Z3JncnB0">Donate</a>
+                    </div>
+                </div>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="nav navbar-nav navbar-right">
+                <li class="nav-item active">
+                    <a class="nav-link" href="tel:+14084819242">(408)481-9242</a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://goo.gl/maps/JpdVVKgajdJdon897">
+                        <img src="images/location.png" width="20" height="20">
+                    </a>
+                </li>
+                 <li class="nav-item active">
+                    <a class="nav-link" href="mailto:joshikumarswami@yahoo.com">
+                        <img src="images/email.png" width="20" height="18">
+                    </a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="https://www.facebook.com/sanatana.dharmakendra">
+                        <img src="images/facebook.png" width="20" height="20">
+                    </a>
+                </li>
+
+            </ul>
+            </div>
+        </nav>
+     
+            </div>
+       
+    <!-- End of Mobile Version of Menubar -->
+                
+
+    
+                    <div class="d-none d-md-block">
+
+    <div class="card text-center border-0" style="background-color: #e09257; border-color: #e09257">
+        <div class="card-body mt-5 mb-4">
+            <h1 class="card-title font-italic" style="color: white;font-family:serif; font-size:3vw" >Sri Prasanna Ganapathi Temple</h1>
+            <p class="card-text font-" style="color: white;font-family:serif; font-size:1.5vw;"> 3102 Landess Ave
+                <br>San Jose, CA 95132
+                <br>Open Everyday: 8:30AM to 9:00PM </p>
+
+            <div class="btn-group">   
+
+                <button type="button" class="btn btn-light" style="background-color: #e09257; border-color: black" data-toggle="modal" data-target="#eventModal">Event Booking</button>
+      
+                                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="H7Y9XGSJEYZ5U" />
+                    <button type="submit" class="btn btn-light" style="background-color: #e09257; border-color: black; margin-left: 10px">Donate</button>
+                </form>
+                              </div>
+            </div>
+               </div>
+    </div>
+                 <div class="d-sm-none">
+
+    <div class="card text-center border-0" style="background-color: #e09257; border-color: #e09257">
+        <div class="card-body mt-0 mb-0">
+            <h1 class="card-title font-italic" style="color: white;font-family:serif; font-size:4vw" >Sri Prasanna Ganapathi Temple</h1>
+            <p class="card-text font-" style="color: white;font-family:serif; font-size:2.5vw;"> 3102 Landess Ave
+                <br>San Jose, CA 95132
+                <br>Open Everyday: 8:30AM to 9:00PM </p>
+                  <div class="btn-group">   
+
+                <button type="button" class="btn btn-light" style="background-color: #e09257; border-color: black" onclick="window.location='https://docs.google.com/forms/d/e/1FAIpQLSeMY4kU_INbVeRrqR3uJhfYlk6oO2f-yMHL91xeZQTjvwY7Gw/viewform?embedded=false';">Event Booking</button>
+                                   <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                                           
+                    <input type="hidden" name="cmd" value="_s-xclick" />
+                    <input type="hidden" name="hosted_button_id" value="H7Y9XGSJEYZ5U" />
+                    <button type="submit" class="btn btn-light" style="background-color: #e09257; border-color: black; margin-left: 10px">Donate</button>
+                </form>
+                                                             </div>
+
+            </div> </div></div>
+     
+    
+    
+    
+    <div class="card card-img border-0" style="background-image width: 100% ">
+        <img src="images/hall-view.png" height="500px">
+    </div>
+    <div style="height: 60px"></div>
+        <div class="card text-center border-0">
+        <div class="card-body">
+            <h1 class="card-title font-italic mb-4" style="color: black;font-family:serif" >Upcoming Events</h1>
+                <button type="button" class="btn btn-light" style="background-color: white; border-color: black" data-toggle="modal" data-target="#calendarModal">Calendar</button>
+        </div>
+        </div>
+
+      <div class="card-group mr-5 ml-5 " style="background-color:  #e09257">
+        <div class="card border-0" style="height:  300px; background-color: #fcfbf7">
+            <div class="card-body">
+            <h5 class="card-title" style="font-family:serif">05/11/2019</h5>
+            <h5 style="font-family:serif"> Temple Anniversary</h5>
+            <p class="card-text" style="font-family:serif">Third Prathishta Anniversary<br>
+            <button type="button" class="btn btn-light" data-toggle="modal" data-target="#progModal" style="font-family:serif">Details</button>
+            </div>
+        </div>
+        <div class="card border-0" style="height: 300px; background-color: #fcf1ed">
+            <div class="card-body">
+            <h5 class="card-title" style="font-family:serif">05/12/2019</h5>
+            <h5 style="font-family:serif"> Temple Anniversary</h5>
+            <p class="card-text" style="font-family:serif">Third Prathishta Anniversary<br>Maha Kumbhabhishekam</p>
+                <button type="button" class="btn btn-light" data-toggle="modal" data-target="#progModal" style="font-family:serif">Details</button>
+            </div>
+        </div>
+        <div class="card border-0" style="height: 300px; background-color: #fcfbf7">
+            <div class="card-body">
+            <h5 class="card-title" style="font-family:serif">05/19/2019</h5>
+            <h5 style="font-family:serif"> Narasimha Jayanthi</h5>
+            </div>
+        </div>
+      </div>
+    
+      <div style="height: 50px"></div>
+
+      <div class="card-group">
+          <div class="card">
+            <img class="card-img-top" src="images/temple.jpeg" height=300px>
+            <div class="card-body text-center">
+                <p class="card-text text-left" style="font-family:serif"> Our temple is a non-profit organization dedicated to Vedic principles of Eternal Dharma (or Rightousness), public service and charity. Participate in development of the temple.</p>
+                
+                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                <input type="hidden" name="cmd" value="_s-xclick" />
+                <input type="hidden" name="hosted_button_id" value="H7Y9XGSJEYZ5U" />
+                <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Donate with PayPal button" />
+                <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1" />
+                </form>
+            </div>
+          </div>
+
+          <div class="card">
+            <img class="card-img-top" src="images/SYRCC1.jpg" height=300px>
+            <div class="card-body text-center">
+                <p class="card-text text-left" style="font-family:serif">Dedicated to promoting the understanding of different cultures using the medium of performing arts(music, dance and visual arts).</p>
+                <a href="http://syrcc.org/" class="btn btn-outline-dark">Go to SYRCC</a>
+            </div>
+          </div>
+
+          <div class="card">
+             <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScXc210GcdqC29ykozKf-0WEm8zyh-jjFJQdtl6gaxVq61lAw/viewform?embedded=true"  height="750" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+          </div>
+    </div>
+    
+<!-- Modals: -->
+        <!-- Desktop Version of Modals -->
+
+
+<div class="modal fade" id="progModal" tabindex="-1" role="dialog" aria-labelledby="eventModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document" aria-hidden="true">
+    <div class="modal-content" aria-hidden="false">
+        <img src="http://www.sanatandharmakendra.org/wp-content/uploads/2013/10/2019-SDK-Third-Anniversary-Celebrations-v1-1.jpg" alt="Prgam on 12th" width="100%">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="priestInfo" tabindex="-1" role="dialog" aria-labelledby="priestModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document" aria-hidden="true">
+    <div class="modal-content" aria-hidden="false">
+        <img src="images/priest.png" alt="Priest Info" height="100%" width="150%">
+    </div>
+  </div>
+</div>
+    
+    <div class="modal fade" id="priestInfo2" tabindex="-1" role="dialog" aria-labelledby="priestModalTitle2" aria-hidden="true">
+  <div class="modal-dialog" role="document" aria-hidden="true">
+    <div class="modal-content" aria-hidden="false">
+        <img src="images/priest2.png" alt="Priest Info" height="600px" width="100%">
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="eventModal" tabindex="-1" role="dialog" aria-labelledby="eventModalTitle" aria-hidden="true"  style="background-color: transparent!important; border-style: none">
+  <div class="modal-dialog" role="document" aria-hidden="true" style="background-color: transparent!important;border-style: none">
+    <div class="modal-content" style="width: auto; height: auto; background-color: transparent!important;border-style: none" aria-hidden="false">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeMY4kU_INbVeRrqR3uJhfYlk6oO2f-yMHL91xeZQTjvwY7Gw/viewform?embedded=true" width="100%" height="600px"; frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade" id="calendarModal" tabindex="-1" role="dialog" aria-labelledby="eventModalTitle" aria-hidden="true">
+  <div class="modal-dialog" role="document" aria-hidden="true">
+    <div class="modal-content" aria-hidden="false">
+        <iframe src="https://calendar.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23ffffff&amp;ctz=America%2FLos_Angeles&amp;src=dmgyZG52bTdrdGgxajQwaHFibHNsZzZqb2QwZ2FjYjRAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&amp;color=%23B39DDB&amp;mode=AGENDA" style="border-width:0" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+            </div>
+    <style>.footer {
+        bottom: 0;
+  width: 100%;
+        background-color: #f5f5f5;
+}
+    .container-footer {
+  width: auto;
+  max-width: 680px;
+padding-left: 30px;
+padding-top: 45px;
+padding-bottom: 45px;
+        text-align: center;
+        }
+        .h8 {
+            text-align: center; 
+        }
+        
+    </style>
+<!--
+    <footer class="footer">
+      <div class="container-footer">
+        <span class="text-muted">
+          -->
+    <footer class="footer">
+    <div class="container-footer">
+        <span class="text-muted">
+            <h8 class="nav-link" >Copyright © 2019 Sanatana Dharma Kendra</h8>
+        </span></div></footer> 
+    </body>
+</html>
